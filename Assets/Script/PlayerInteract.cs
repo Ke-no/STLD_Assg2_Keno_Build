@@ -43,7 +43,6 @@ public class PlayerInteract : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distance, mask))
         {
-            Debug.Log(hit.collider.name);
 
             Interactable interactable = hit.collider.GetComponentInParent<Interactable>();
 
@@ -54,7 +53,6 @@ public class PlayerInteract : MonoBehaviour
 
                 if (Keyboard.current.eKey.wasPressedThisFrame)
                 {
-                    Debug.Log("Clicked E");
 
                     if (audioSource != null)
                     audioSource.Play();

@@ -1,11 +1,5 @@
 using UnityEngine;
 
-/*
-*Author: Keno
-*Date: 10/6/2026
-*Description: Base code for all objects that can be interacted with key E
-*/
-
 public abstract class Interactable : MonoBehaviour
 {
     /*message displays to player when looking at an interactable*/
@@ -18,8 +12,6 @@ public abstract class Interactable : MonoBehaviour
     }
     protected virtual void Interact()
     {
-        /*template function to be overridden by subclassess*/
+        /*template function to be override by subclassess*/
     }
 }
-
-/*Inherited: Collectibles, Keypad, Remote*/
