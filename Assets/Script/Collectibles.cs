@@ -13,14 +13,11 @@ public class Collectibles : Interactable
     public CollectibleType collectibleType;
     protected override void Interact()
     {
-        Debug.Log("Collected: " + collectibleType);
-
-        if (GameManager.Instance == null)
+        if (collectibleType == CollectibleType.BrokenChip && !GameManager.Instance.hasChip)
         {
-            Debug.LogError("GameManager not found");
+            Debug.Log("Collect the new Chip first to replace.");
             return;
         }
-
         GameManager.Instance.Collect(collectibleType);
         Destroy(gameObject);
     }

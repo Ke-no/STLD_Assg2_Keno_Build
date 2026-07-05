@@ -5,7 +5,7 @@ public class LockDoor : Interactable
     public enum DoorType
     {
         TorchDoor,
-        FireSuitDoor
+
     }
 
     public DoorType doorType;
@@ -17,15 +17,6 @@ public class LockDoor : Interactable
             if(!GameManager.Instance.hasTorch)
             {
                 Debug.Log("Torch is required.");
-                return;
-            }
-        }
-
-        if(doorType == DoorType.FireSuitDoor)
-        {
-            if(!GameManager.Instance.hasFireSuit)
-            {
-                Debug.Log("Fire suit is required.");
                 return;
             }
         }

@@ -26,7 +26,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 53.14548, y: 0.21178627, z: -281.06192}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.32879296, y: 0.32879296, z: 0.32879296}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4457505148133229007}
@@ -104,6 +104,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5087820089751514917, guid: 35cad9043186780448991e42a9480435, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 722b3b6faf4b11f40a542874b71f2b06, type: 2}
     - target: {fileID: 5651271162684377953, guid: 35cad9043186780448991e42a9480435, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
